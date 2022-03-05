@@ -1,0 +1,106 @@
+body {
+  box-sizing: border-box;
+  animation-name: fadeInAnimation;
+  animation-duration: 2s;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.carousel-inner {
+  height: 200px;
+}
+
+.topPadding {
+  padding-top: 90px;
+}
+
+.carousel-inner img{
+  opacity: 0.9;
+}
+.mainText {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  font-size: 18px;
+  font-weight: 500;
+  width: 240px;
+  padding: 0.5em;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+input:required{
+  border: 2px solid red;
+}
+.btn-lg {
+  width: 350px;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 0.5em;
+}
+
+.btn-lg:hover {
+  border-radius: 20px;
+  width: 355px;
+}
+
+.container-fluid {
+  padding: 3%;
+  /* position: relative; */
+  background-image: linear-gradient(to right top, #fffdfd, #f0c5c6, #dc8e92, #c35660, #a50033);
+}
+
+.imageWrapper img {
+  position: absolute;
+}
+/* animation in css  */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: white;
+  }
+
+  .carousel-inner {
+    height: 200px;
+  }
+
+  .mainText {
+    flex-direction: column;
+  }
+
+  .mainImage {
+    width: 70px;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .topPadding {
+    padding: 50px;
+  }
+}
